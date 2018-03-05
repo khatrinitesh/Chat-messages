@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script>
+		// $(window).on('load', function(){
+		// 	var bbc = window.name['mayur1'].contentDocument.getElementById('mayur')
+		// 	console.log(bbc);
+		// });
+		function showIframeContent(id) {
+		  var iframe = document.getElementById(id);
+		    try {
+		      var doc = (iframe.contentDocument)? iframe.contentDocument: iframe.contentWindow.document;
+		      var FindingClose = $(doc).find(".icon_close");
+		      $(FindingClose).on('click', function(){
+		      	$("#mayur").hide();
+		      });
+		      alert(FindingClose.body.innerHTML);
+		      //console.log(doc);
+		    }
+		    catch(e) {
+		       alert(e.message);
+		    }
+		  return false;
+		}
+	 </script>
+	
+</head>
+<body>
+<div class="content">
+	
+</div>
+<div id="abc" >
+	<a href="">asdasdasd</a>
+	<iframe id="mayur" name="mayur1" src="chat.html" frameborder="0" style="height: 432px;position: fixed;bottom: 0; right:0;"></iframe>
+	<a href="#" onclick="return showIframeContent('mayur')">Show</a>
+</div>
+</body>
+</html>

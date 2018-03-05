@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" style="background: none transparent">
+<head>
+	<meta charset="UTF-8">
+	<title>Chat</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		$(window).on('load', function(){
+			$(document).on("click", ".icon_min", function(){
+				$(".chat,.message_send").toggleClass("minimize");
+				//$(".message_send").toggleClass("minimize");
+				//$("iframe").remove();
+			});
+			// $(document).on("click", ".icon_close", function(){
+			// 	alert("hi");
+			// 	console.log($("#abc").length);
+			// 	//$(".chat_main_wrapper").remove();
+			// 	$("#abc").hide();
+			// });
+			// $(document).on("click", ".icon_close", function(){
+			// 	//alert(window.name);
+			// 	var IframeName = window.name; 
+			// 	var CloseName = $(".icon_close").attr("name"); 
+			// 	console.log(IframeName);
+			// 	console.log(CloseName);
+			// 	if(IframeName == CloseName){
+			// 		window.document.getElementById("abc").style.display = 'none';
+			// 	}
+			// });
+		//var getIframe = window.$("iframe").length;
+		//console.log(getIframe);
+		//alert(window.name);
+
+		// if(getIframe == 0){
+		// 	var mayur = window.find("iframe");
+		// 	console.log(mayur)
+		// }
+		});
+	</script>
+
+</head>
+<body style="background: none transparent">
+	<div id="x" class="chat_main_wrapper">
+		<div class="chat_wrapper">
+			<div class="menu">
+				<div class="icon_name">
+			        <span class="icon">
+			        	<img src="img/icon_profile.png" draggable="false"/>
+			        </span>
+			        <span class="name">Shri Ganesh Motor Works Motor Works</span>
+		        </div>
+		        <div class="icon_close_min">
+		        	<a href="javascript:void(0)" class="icon_min" title="Minimize"></a>
+		        	<a href="javascript:void(0)" class="icon_close" name="mayur" title="Close"></a>
+		        </div>
+		        <div class="clear"></div>
+		    </div>
+		    <ol class="chat">
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">Pratik!</span>
+			        <span class="desc">Hi, How are you doing?</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Mayur!</span>
+			        <span class="desc">Hi, I am fine. How about you?</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">Pratik!</span>
+			        <span class="desc">I am fine. What are you working on?</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Mayur!</span>
+			        <span class="desc">I am working on carworkz</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">Pratik!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			      	<span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			        <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="self">
+			      <div class="msg">
+			        <span class="author">Hola!</span>
+			        <span class="desc">Te vienes a cenar al centro</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+			    <li class="other">
+			      <div class="avatar"><img src="img/icon_c.png" draggable="false"/></div>
+			      <div class="msg">
+			        <span class="author">ambab Infotech</span>
+			        <span class="desc">Information Technology</span>
+			        <span class="time">Today 11:59 am</span>
+			      </div>
+			    </li>
+		    </ol>
+		    <div class="message_send">
+		    <form action="">
+	    		<input class="textarea" type="text" placeholder="Type a messsage"/>
+	    		<button>Send</button>
+	    	</form>
+	    	</div>
+	    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+
+
+html, body {
+    background: #e5e5e5;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.clear
+{
+    clear: both;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+/* CHAT */
+.chat_main_wrapper
+{
+    position: fixed;
+    bottom:0;
+}
+
+.chat_wrapper{
+    max-width:278px;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+div.chat_wrapper:last-of-type{
+     margin-right: 0;
+}
+
+/* M E N U */
+.menu {
+    display: block;
+    background: #333333;
+    border-bottom: 2px solid #00acf8;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.menu .icon_name
+{
+    float: left;
+    width: 67%;
+    padding: 5px 0px 6px 14px;
+}
+
+.menu .icon_name .icon {
+    float: left;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.menu .icon_name .name
+{
+    display: inline-block;
+    margin-top: 4px;
+    width:80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color:#fff;
+    font-size: 13px;
+}
+
+.menu .icon_name .icon img 
+{
+    vertical-align: middle;
+}
+
+.menu .icon_close_min
+{
+    float: right;
+    width: 25%;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.icon_close_min .icon_min,
+.icon_close_min .icon_close{
+    background-color: transparent;
+    border:medium none;
+    color:#fff;
+    outline: none;
+    width: 8px;
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.icon_close_min .icon_min{
+    background: url('../img/icon_min.png') no-repeat center;
+    height: 18px;
+    width: 18px;
+}
+
+.icon_close_min .icon_close{
+    background: url('../img/icon_close.png') no-repeat center;
+    height: 18px;
+    width: 18px;
+}
+
+/* M E S S A G E S */
+.minimize{display: none !important;}
+.chat {
+    box-shadow: -1px 0px 4px -3px rgba(0,0,0,0.5);
+    list-style: none;
+    background: #fff;
+    margin: 0;
+    padding: 6px 10px 0;
+    height: 330px;
+    overflow-y: scroll;    
+    display: block;
+}
+
+.chat li {
+    position: relative;
+    margin: 0 0 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.chat li:last-child
+{
+    margin-bottom: 0;
+}
+
+.chat li.other:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    left: 27px;
+    width: 0px;
+    height: 0px;
+    border: 8px solid #e1e1e1;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.chat li.self:after
+{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: -8px;
+    border: 8px solid #00acf8;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.chat li.self
+{
+    float: right;
+}
+
+.chat .avatar {
+    margin-right: 10px;
+    float: left;
+}
+
+.chat li.self .msg
+{
+    background-color: #00acf8;
+    color:#fff;
+}
+
+.chat li.other .msg {
+    background: #e1e1e1;    
+}
+
+.chat li.other{
+    border-top-left-radius: 0;
+}
+
+.chat li.other .msg
+{
+    float:left;
+}
+
+.chat li.self .msg
+{
+    float:right;
+}
+
+.chat li.other .msg,
+.chat li.self .msg{
+    padding: 8px;
+    border-radius: 10px;
+    max-width: 170px;
+}
+
+.chat li.other .msg span,
+.chat li.self .msg span{
+    display: block;
+}
+
+.chat li.other .msg span.author,
+.chat li.other .msg span.desc,
+.chat li.self .msg span.author,
+.chat li.self .msg span.desc{
+    font-size: 12px;
+}
+
+.chat li.other .msg span.time,
+.chat li.self .msg span.time
+{
+    font-size: 10px;
+    color:#ccc;
+    padding-top: 4px;
+    position: absolute;
+    bottom:-15px;
+}
+
+.chat li.self .msg span.time{
+    right:8px; 
+}
+
+/* T Y P E */
+.message_send{    
+    width: 100%;
+    box-shadow: -1px 0px 4px -3px rgba(0,0,0,0.5);
+    background-color: #fff;
+    position: relative;
+    border-top: 1px solid #f0f0f0;
+}
+
+.message_send input.textarea {
+    border: none;
+    color: #666;
+    height: 48px;
+    padding:0 18px;
+    width: 80%;
+    box-sizing: border-box;
+    float: left;
+    outline: none;   
+}
+
+.message_send button {
+    background:#fff url('../img/icon_send.png') no-repeat center;
+    width: 20%;
+    float: left;
+    height: 48px;
+    display: inline-block;
+    border:medium;
+    padding:0;
+    overflow:hidden;
+    text-indent: -99px;
+    cursor: pointer;
+}
+
